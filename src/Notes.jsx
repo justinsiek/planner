@@ -15,13 +15,23 @@ export default function Notes() {
     
     return (
         <>
-            <textarea name="" id="" cols="30" 
-            rows="10"
-            onChange={handleChange}></textarea>
-            <button className="" onClick={handleSaveClick}>Save</button> 
-            {notes.map((note, index) => (
-                <Note key={index} content={note} />
-            ))}
+            <div className="relative text-3xl font-bold h-[637px] w-[937px] bg-red-100">
+                <div className='absolute w-[25%] h-full bg-yellow-200'>
+
+                </div>
+
+                <div className='absolute left-[25%]  w-[75%] h-full bg-green-100'>
+                    <textarea name="" id="" cols="2" 
+                    rows="2"
+                    onChange={handleChange}></textarea>
+                    <button className="" onClick={handleSaveClick}>Save</button> 
+                    <div className='flex'>
+                        {notes.map((note, index) => (
+                            <Note key={index} content={note} />
+                        ))}
+                    </div>
+                </div>
+            </div>
         </>
   )
   
