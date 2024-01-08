@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         'sans': ['Inter Tight', 'sans-serif'],
       },
+      colors: {
+        'bone': '#f9f6ee',
+      },
     },
   },
   plugins: [],
